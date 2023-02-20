@@ -28,11 +28,11 @@ public class CashCardJsonTest {
     @Test
     public void cashCardDeserializationTest() throws IOException {
         String expected = """
-    {
-        "id": 99,
-        "amount": 123.45
-    }
-    """;
+                {
+                    "id": 99,
+                    "amount": 123.45
+                }
+                """;
         assertThat(json.parseObject(expected).id()).isEqualTo(99l);
         assertThat(json.parseObject(expected).amount()).isEqualTo(123.45);
     }
